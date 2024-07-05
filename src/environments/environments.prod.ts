@@ -2,7 +2,7 @@
 
 
 export const environments = {
-  baseUrl: 'https://waryplumblum.com/api',
+  baseUrl: 'https://waryplumblum.github.io',
   production: true,
   useStaticData: false
 };
