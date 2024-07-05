@@ -3,7 +3,7 @@
         <mat-card-title>{{ hero.superhero }}</mat-card-title>
         <mat-card-subtitle>{{ hero.alter_ego }}</mat-card-subtitle>
     </mat-card-header>
-    <!-- <img matCardImage src="Card wide image source"> -->
+    <img matCardImage [src]=" hero | heroImage " [alt]="hero.superhero">
     <mat-card-content class="mt-2">
       <h4>{{ hero.publisher }}</h4>
       <p>
