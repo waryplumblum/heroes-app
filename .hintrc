@@ -4,7 +4,6 @@
   ],
   "hints": {
     "axe/text-alternatives": "off",
-    "axe/forms": "off",
-    "typescript-config/consistent-casing": "off"
+    "axe/forms": "off"
   }
 }
