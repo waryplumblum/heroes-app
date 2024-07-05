@@ -15,9 +15,17 @@ export class ListPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.heroesService.getHeroes()
-      .subscribe( heroes => this.heroes = heroes );
+      .subscribe(
+        heroes => {
+          console.log('Heroes received:', heroes);
+          this.heroes = Array.isArray(heroes) ? heroes : [];
+        },
+        error => {
+          console.error('Error fetching heroes:', error);
+          this.heroes = []; // Manejo de errores, asigna un array vacío u otro valor adecuado
+        }
+      );
   }
-
 
 
 }
