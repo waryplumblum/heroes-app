@@ -24,4 +24,8 @@ export class NewPageComponent {
     { id: 'Marvel Comics', desc: 'Marvel - Comics' },
   ]
 
+
+  onSubmit():void{
+    
+  }
 }
