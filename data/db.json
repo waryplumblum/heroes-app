@@ -2,7 +2,7 @@
   "users": [
     {
       "id": "1",
-      "usuario": "John Doe",
+      "user": "John Doe",
       "email": "john.due@gmail.com"
     }
   ],
@@ -111,14 +111,6 @@
       "alter_ego": "Tony Stark",
       "first_appearance": "Tales of Suspense #39",
       "characters": "Tony Stark"
-    },
-    {
-      "id": "marvel-thor",
-      "superhero": "Thor",
-      "publisher": "Marvel Comics",
-      "alter_ego": "Thor Odinson",
-      "first_appearance": "Journey into Myster #83",
-      "characters": "Thor Odinson"
     },
     {
       "id": "marvel-hulk",
