@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "usuario": "John Doe",
       "email": "john.due@gmail.com"
     }
@@ -166,6 +166,15 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
+    },
+    {
+      "id": "",
+      "superhero": "Rick Grames",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Rick",
+      "first_appearance": "Comic The Walking Dead #1",
+      "characters": "Rick Grames",
+      "alt_img": "https://th.bing.com/th/id/OIP.gUZpbV-1PDisnWszGpNc-gHaLN?w=186&h=281&c=7&r=0&o=5&dpr=1.3&pid=1.7"
     }
   ]
 }
