@@ -1,6 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { CanActivateFn, CanMatchFn, Router, UrlTree } from '@angular/router';
-import { catchError, map, Observable, of, take } from 'rxjs';
+import { catchError, map, Observable, of, take, tap } from 'rxjs';
 import { AuthService } from '../services/auth.service';
 
 @Injectable({providedIn: 'root'})
@@ -15,7 +15,7 @@ const isAuthenticated = (): Observable<boolean | UrlTree> => {
   const router = inject(Router);
   return authService.checkAuthentication().pipe(
     take(1),
-    map((isAuthenticated: boolean) => {
+    tap((isAuthenticated: boolean) => {
       if (!isAuthenticated) {
         return router.createUrlTree(['./auth/login']);
       }
