@@ -25,5 +25,5 @@ const isAuthenticated = (): Observable<boolean | UrlTree> => {
   );
 }
 
-export const canActivateGuard:CanActivateFn = isAuthenticated;
-export const canMatchGuard   :CanMatchFn    = isAuthenticated;
+export const canActivateAuthGuard:CanActivateFn = isAuthenticated;
+export const canMatchAuthGuard   :CanMatchFn    = isAuthenticated;
